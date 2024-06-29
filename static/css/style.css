@@ -1,0 +1,910 @@
+@font-face {
+  font-family: poppinsBlod;
+  src: url(../font/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins;
+  src: url(../font/Poppins-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  height: 100%;
+}
+
+body {
+  font-family: var(--coach-body-font-family);
+  font-family: poppins;
+  font-size: clamp(1rem, 1.2vw, 2rem);
+}
+body p {
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+}
+body h1 {
+  font-size: clamp(2rem, 3vw, 2rem);
+}
+body header .headerClass {
+  margin: 1.5vw 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body header .headerClass span a {
+  color: rgb(30, 30, 30);
+  font-weight: bold;
+  font-size: clamp(1rem, 1.2vw, 2rem);
+  font-family: poppinsBlod;
+}
+body header .headerClass span .dropdown {
+  display: none;
+}
+body header .headerClass span .btn {
+  background-color: #672ebb;
+  color: white;
+  padding: 9px 15px;
+  font-size: clamp(1rem, 1.2vw, 2rem);
+}
+body header .headerClass span .logoid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body header .headerClass span .logoid p {
+  color: #672ebb;
+}
+body header .headerClass span:first-child a {
+  font-size: clamp(2rem, 2vw, 2rem);
+}
+body header .headerClass span:nth-child(2) a {
+  margin: 0 10px;
+}
+body main .mainClass .startVideos {
+  background-color: #672ebb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+body main .mainClass .startVideos .side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40vw;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+body main .mainClass .startVideos .side a {
+  background-color: #d94c30;
+  color: white;
+  padding: 9px 15px;
+}
+body main .mainClass .startVideos .side p {
+  margin: 20px 0;
+}
+body main .mainClass .startVideos .side .img img {
+  width: 34vw;
+  height: 30vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+body main .mainClass .joinNow {
+  background-color: #dfdfdf;
+  padding: 20px 0;
+}
+body main .mainClass .joinNow .headLetter {
+  text-align: center;
+}
+body main .mainClass .joinNow .headLetter .parBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body main .mainClass .joinNow .headLetter .parBlock p {
+  width: 60%;
+}
+body main .mainClass .joinNow .headLetter h1 {
+  color: #261f44;
+  font-weight: bolder;
+  margin: 20px 0;
+}
+body main .mainClass .joinNow .headLetter h1 .underline {
+  display: inline-block;
+  position: relative;
+}
+body main .mainClass .joinNow .headLetter h1 .underline::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 4px;
+  background-image: url("../media/line-shape.svg");
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  z-index: -1;
+}
+body main .mainClass .joinNow .joinCards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 30px 0;
+}
+body main .mainClass .joinNow .joinCards .joinCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+  border-radius: 12px;
+  width: 34vw;
+  height: 30vw;
+}
+body main .mainClass .joinNow .joinCards .joinCard span .price {
+  font-size: clamp(2rem, 2vw, 2rem);
+  font-weight: bold;
+}
+body main .mainClass .joinNow .joinCards .joinCard span .price small {
+  font-size: clamp(2vw, 0.8vw, 2rem);
+  color: grey;
+  font-weight: 400;
+}
+body main .mainClass .joinNow .joinCards .joinCard span .good p {
+  margin: 5px 0;
+}
+body main .mainClass .joinNow .joinCards .joinCard span .good p i {
+  color: green;
+}
+body main .mainClass .joinNow .joinCards .joinCard span .btnBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body main .mainClass .joinNow .joinCards .joinCard span .btnBlock a {
+  width: 100%;
+  margin: 10px 5px;
+  padding: 9px 15px;
+  font-size: clamp(1rem, 1.2vw, 2rem);
+  border: 1px solid #672ebb;
+  color: #672ebb;
+}
+body main .mainClass .joinNow .joinCards .joinCard span .btnBlock a:hover {
+  background-color: #672ebb;
+  color: white;
+}
+body main .mainClass .WelcomeBlock {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5vw 6vw;
+}
+body main .mainClass .WelcomeBlock .side p {
+  color: #6f6985;
+}
+body main .mainClass .WelcomeBlock .side h1 {
+  color: #261f44;
+  font-weight: bolder;
+  margin: 20px 0;
+  display: inline-block;
+  position: relative;
+}
+body main .mainClass .WelcomeBlock .side h1:after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 4px;
+  background-image: url("../media/line-shape.svg");
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  z-index: -1;
+}
+body main .mainClass .WelcomeBlock .side img {
+  width: 40vw;
+  height: 23vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+body main .mainClass .WelcomeBlock .side .btnsBlock {
+  margin-top: 20px;
+}
+body main .mainClass .WelcomeBlock .side .btnsBlock .btn {
+  padding: 9px 15px;
+  font-size: clamp(1rem, 1.2vw, 2rem);
+}
+body main .mainClass .WelcomeBlock .side .btnsBlock .btn:first-child {
+  color: white;
+  background: #672ebb;
+}
+body main .mainClass .WelcomeBlock .side .btnsBlock .btn:last-child {
+  color: #672ebb;
+  border: 1px solid #672ebb;
+}
+body main .mainClass .openTimeBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+body main .mainClass .openTimeBlock .boxes {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  border-radius: 12px;
+  padding: 30px 10px;
+  background-color: white;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+body main .mainClass .openTimeBlock .boxes .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20vw;
+}
+body main .mainClass .openTimeBlock .boxes .box p:first-child {
+  color: #6f6985;
+}
+body main .mainClass .openTimeBlock hr {
+  border: 0.5px solid grey;
+  z-index: -1;
+  top: 35%;
+  width: 100%;
+  position: absolute;
+}
+body main .mainClass .whyOnline {
+  margin: 1.5vw 6vw;
+}
+body main .mainClass .whyOnline .headText {
+  margin: 50px 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .mainClass .whyOnline .headText h1 {
+  margin: 20px 0;
+}
+body main .mainClass .whyOnline .headText h1 .underline {
+  display: inline-block;
+  position: relative;
+}
+body main .mainClass .whyOnline .headText h1 .underline::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 4px;
+  background-image: url("../media/line-shape.svg");
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  z-index: -1;
+}
+body main .mainClass .whyOnline .headText p {
+  color: #6f6985;
+}
+body main .mainClass .whyOnline .maintheme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body main .mainClass .whyOnline .maintheme .boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+}
+body main .mainClass .whyOnline .maintheme .boxes .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body main .mainClass .whyOnline .maintheme .boxes .box i {
+  background: rgba(103, 46, 187, 0.2509803922);
+  padding: 5px 13px;
+  color: #672ebb;
+  border-radius: 100%;
+  font-size: clamp(2rem, 2vw, 2rem);
+}
+body main .mainClass .whyOnline .maintheme .boxes .box h5 {
+  margin: 20px 0;
+  font-weight: bold;
+}
+body main .mainClass .upcoming {
+  background-color: #dfdfdf;
+  padding: 40px 0;
+}
+body main .mainClass .upcoming .headerText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .mainClass .upcoming .headerText .btn {
+  background-color: #d94c30;
+  color: white;
+}
+body main .mainClass .upcoming .headerText .underline {
+  display: inline-block;
+  position: relative;
+}
+body main .mainClass .upcoming .headerText .underline::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 4px;
+  background-image: url("../media/line-shape.svg");
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  z-index: -1;
+}
+body main .mainClass .upcoming .headerText p {
+  color: #6f6985;
+}
+body main .mainClass .upcoming .cardBlock {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  margin: 1.5vw 6vw;
+  padding: 50px 0;
+}
+body main .mainClass .upcoming .cardBlock .postcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 27vw;
+  height: 34vw;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 4px 10px 59px -13px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 10px 59px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 10px 59px -13px rgba(0, 0, 0, 0.75);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+}
+body main .mainClass .upcoming .cardBlock .postcard .img img {
+  width: 27vw;
+  height: 16vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+body main .mainClass .upcoming .cardBlock .postcard .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+body main .mainClass .upcoming .cardBlock .postcard .info div {
+  margin: 10px 0;
+}
+body main .mainClass .upcoming .cardBlock .postcard .info a {
+  font-weight: bold;
+  color: rgb(30, 30, 30);
+  font-size: clamp(2rem, 2vw, 2rem);
+}
+body main .mainClass .upcoming .cardBlock .postcard .info .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .mainClass .upcoming .cardBlock .postcard .info .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body main .mainClass .upcoming .cardBlock .postcard .info .price p {
+  font-size: clamp(2rem, 2vw, 2rem);
+}
+body main .mainClass .upcoming .cardBlock .postcard .info .price a {
+  color: #672ebb;
+  font-size: clamp(1rem, 1.2vw, 2rem);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+body main .mainClass .upcoming .cardBlock .postcard .info .price a i {
+  display: inline-block;
+  margin-left: 8px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+body main .mainClass .upcoming .cardBlock .postcard .info .price a:hover i {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+body main .mainClass .aboutBlock {
+  margin: 50px 0;
+}
+body main .mainClass .aboutBlock .sidesClass {
+  margin: 1.5vw 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body main .mainClass .aboutBlock .sidesClass .side {
+  color: grey;
+}
+body main .mainClass .aboutBlock .sidesClass .side a {
+  padding: 9px 15px;
+  border: 1px solid #672ebb;
+  color: #672ebb;
+  margin: 20px 0;
+}
+body main .mainClass .aboutBlock .sidesClass .side a:hover {
+  background: #672ebb;
+  color: white;
+}
+body main .mainClass .aboutBlock .sidesClass .side .good p {
+  color: grey !important;
+}
+body main .mainClass .aboutBlock .sidesClass .side .good p i {
+  color: green;
+}
+body main .mainClass .aboutBlock .sidesClass .side img {
+  width: 33vw;
+  height: 35vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 12px;
+  margin-right: 60px;
+}
+body main .mainClass .aboutBlock .sidesClass .side p:first-child {
+  color: #672ebb;
+}
+body main .mainClass .aboutBlock .sidesClass .side h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  font-weight: bold;
+  color: rgb(30, 30, 30) !important;
+}
+body main .mainClass .aboutBlock .sidesClass .side h1 .underline {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+}
+body main .mainClass .aboutBlock .sidesClass .side h1 .underline::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background-image: url("../media/line-shape.svg");
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  z-index: -1;
+}
+body main .mainClass .videosClass {
+  margin: 1.5vw 6vw;
+}
+body main .mainClass .videosClass .headTxt {
+  font-size: clamp(2rem, 2vw, 2rem);
+  margin: 20px 0;
+  font-weight: bold;
+}
+body main .mainClass .videosClass .videosBlock {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+}
+body main .mainClass .videosClass .videosBlock .videoPost iframe {
+  width: 28vw;
+  height: 16vw;
+  border-radius: 12px;
+}
+body main .mainClass .videosClass .videosBlock .videoPost p {
+  font-weight: bold;
+}
+body main .mainClass .videosClass .btnBlock {
+  margin: 30px 0;
+}
+body main .mainClass .videosClass .btnBlock .btn {
+  padding: 9px 15px;
+  border: 1px solid #672ebb;
+  color: #672ebb;
+  font-size: clamp(1rem, 1.2vw, 2rem);
+}
+body main .mainClass .videosClass .btnBlock .btn:hover {
+  background-color: #672ebb;
+  color: white;
+}
+body main .mainClass .blogheadtxt {
+  margin: 1.5vw 6vw;
+}
+body main .mainClass .blogheadtxt h1 {
+  font-weight: bold;
+}
+body main .mainClass .blogheadtxt p {
+  color: grey;
+}
+body main .mainClass .blogClass {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.5vw 6vw;
+}
+body main .mainClass .blogClass .blogPost {
+  width: 26vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body main .mainClass .blogClass .blogPost .img a img {
+  width: 26vw;
+  height: 16vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 12px;
+}
+body main .mainClass .blogClass .blogPost .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+}
+body main .mainClass .blogClass .blogPost .info a {
+  font-size: clamp(2rem, 2vw, 2rem);
+  font-weight: bold;
+  color: rgb(30, 30, 30);
+  margin: 10px 0;
+}
+body main .mainClass .blogClass .blogPost .info .time {
+  color: grey;
+}
+body footer .footerClass {
+  padding: 1.5vw 6vw;
+  background-color: #261f44;
+  color: white;
+}
+body footer .footerClass .float1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+body footer .footerClass .float1 .box {
+  margin: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body footer .footerClass .float1 .box input {
+  margin: 20px 0;
+  padding: 15px 15px;
+  outline: none;
+  border: 0;
+  width: 100%;
+  border-radius: 6px;
+}
+body footer .footerClass .float1 .box .btn {
+  background-color: #d94c30;
+  color: white;
+  font-size: clamp(1rem, 1.2vw, 2rem);
+}
+body footer .footerClass .float2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  body header .headerClass span:nth-child(2) {
+    display: none;
+  }
+  body header .headerClass span .btnBook {
+    display: none;
+  }
+  body header .headerClass span .dropdown {
+    display: block;
+  }
+  body main .mainClass .startVideos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body main .mainClass .startVideos .side {
+    width: 90vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .mainClass .blogClass {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+  }
+  body main .mainClass .blogClass .blogPost {
+    width: 82vw;
+    border-bottom: 1px solid grey;
+    margin: 20px 0;
+  }
+  body main .mainClass .blogClass .blogPost .img a img {
+    width: 82vw;
+    height: 40vw;
+  }
+  body main .mainClass .joinNow .joinCards {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+  }
+  body main .mainClass .joinNow .joinCards .joinCard {
+    width: 82vw;
+    height: 82vw;
+    margin: 20px 0;
+  }
+  body main .mainClass .videosClass .videosBlock {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+  }
+  body main .mainClass .videosClass .videosBlock .videoPost {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px 0;
+  }
+  body main .mainClass .videosClass .videosBlock .videoPost iframe {
+    width: 82vw;
+    height: 40vw;
+  }
+  body main .mainClass .videosClass .btnBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .mainClass .aboutBlock .sidesClass {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .mainClass .aboutBlock .sidesClass .side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .mainClass .upcoming {
+    padding: 40px 20px;
+  }
+  body main .mainClass .upcoming .cardBlock {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    justify-items: center;
+  }
+  body main .mainClass .upcoming .cardBlock .postcard {
+    margin: 20px 0;
+    width: 82vw;
+    height: 115vw;
+  }
+  body main .mainClass .upcoming .cardBlock .postcard .img img {
+    width: 82vw;
+    height: 50vw;
+  }
+  body main .mainClass .whyOnline .maintheme .boxes {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+  }
+  body main .mainClass .WelcomeBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body main .mainClass .WelcomeBlock .side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .mainClass .WelcomeBlock .side .btnsBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .mainClass .WelcomeBlock .side .btnsBlock a {
+    margin: 10px 0;
+  }
+  body main .openTimeBlock .boxes {
+    font-size: clamp(2vw, 0.8vw, 2rem);
+  }
+  body footer .footerClass .float1 {
+    display: none;
+  }
+}

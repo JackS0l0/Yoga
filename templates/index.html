@@ -1,0 +1,269 @@
+{% extends 'base.html' %}
+{% block main %}
+    <main>
+        <div class="mainClass">
+            <div class="WelcomeBlock">
+                {% for post in cover %}
+                    <div class="side">
+                        <p><b>{{post.mini_txt}}</b></p>
+                        <h1>{{post.name}}</h1>
+                        <p>{{post.txt}}</p>
+                        <div class="btnsBlock">
+                            <a href="#" class="btn">Book online yoga now</a>
+                            <a href="#" class="btn">View my courses</a>
+                        </div>
+                    </div>
+                    <div class="side">
+                        <img src="{{post.img.url}}">
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="openTimeBlock">
+                <div class="boxes">
+                    <div class="box">
+                        <p>Every Sunday</p>
+                        <p>7am - 10am</p>
+                    </div>
+                    <div class="box">
+                        <p>Location</p>
+                        <p>Live streaming</p>
+                    </div>
+                    <div class="box">
+                        <p>Yoga Day</p>
+                        <p>10th August</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="whyOnline">
+                <div class="headText">
+                    <h1>Why online <div class="underline">private yoga</div> classes?</h1>
+                    <p>With the world shifting into the digital sphere, yoga classes have also taken the plunge into a new realm.</p>
+                </div>
+                <div class="maintheme">
+                    <div class="boxes">
+                        <div class="box">
+                            <i class="bi bi-display"></i>
+                            <h5>Your Time, Your Space</h5>
+                            <p>Online private yoga classes allow you to select the specific time of the day that fits into your daily schedule.</p>
+                        </div>
+                        <div class="box">
+                            <i class="bi bi-calendar2-week"></i>
+                            <h5>A Plethora of Choice</h5>
+                            <p>Online yoga can provide you with a wide spectrum of yoga courses that you feel like plunging into.</p>
+                        </div>
+                        <div class="box">
+                            <i class="bi bi-house"></i>
+                            <h5>Absolute Comfort</h5>
+                            <p>You may feel a bit self-conscious in a yoga studio. Practising yoga with other people might be a bit intimidating for you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="upcoming">
+                <div class="headerText">
+                    <h1><div class="underline">Upcoming Courses</div></h1>
+                    <p>Sign up for upcoming weekly classes and events orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="cardBlock">
+                    <div class="postcard">
+                        <div class="img">
+                            <img src="../static/media/yoga-single.jpg">
+                        </div>
+                        <div class="info">
+                            <a href="#">Yoga for Preventive Health</a>
+                            <p>Monday 7am EST Via Zoom</p>
+                            <div class="time">
+                                <p><i class="bi bi-clock-fill"></i> 60 minutes</p>
+                                <p><i class="bi bi-people-fill"></i> 26 Students</p>
+                            </div>
+                            <div class="price">
+                                <p>$55.00</p>
+                                <a href="https://wa.me/994556449164?text=Hello, I want to join Yoga for Preventive Health!" target="_blank">Join Now <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="postcard">
+                        <div class="img">
+                            <img src="../static/media/yoga-2.jpg">
+                        </div>
+                        <div class="info">
+                            <a href="#">Yoga for Wellness</a>
+                            <p>Thursday's 7pm EST Via Zoom</p>
+                            <div class="time">
+                                <p><i class="bi bi-clock-fill"></i> 1 hour 15 minutes</p>
+                                <p><i class="bi bi-people-fill"></i> 20 Students</p>
+                            </div>
+                            <div class="price">
+                                <p>$25.00</p>
+                                <a href="#">Join Now <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="postcard">
+                        <div class="img">
+                            <img src="../static/media/yoga-3.jpg">
+                        </div>
+                        <div class="info">
+                            <a href="#">Yoga for Wellness</a>
+                            <p>TIn Studio</p>
+                            <div class="time">
+                                <p><i class="bi bi-clock-fill"></i> 1 hour 40 minutes</p>
+                                <p><i class="bi bi-people-fill"></i> 32 Students</p>
+                            </div>
+                            <div class="price">
+                                <p>$55.00</p>
+                                <a href="#">Join Now <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="headerText">
+                    <a href="#" class="btn">View All Courses</a>
+                </div>
+            </div>
+            <div class="aboutBlock">
+                <div class="sidesClass">
+                    <div class="side">
+                        <img src="../static/media/about.png">
+                    </div>
+                    <div class="side">
+                        <p>DUYGU ASGEROVA</p>
+                        <h1><div class="underline">I work via a holistic approach with an emphasis on:</div></h1>
+                        <p>Our yoga retreats are designed specifically for beginners. Private Yoga and Holistic Wellness, Mentoring, and Services. Personalized guidance, resources, and support.</p>
+                        <div class="good">
+                            <p><i class="bi bi-check-circle-fill"></i> Online YouTube Courses</p>
+                            <p><i class="bi bi-check-circle-fill"></i> Private Courses</p>
+                            <p><i class="bi bi-check-circle-fill"></i> Group Courses</p>
+                        </div>
+                        <a href="#" class="btn">Meet Personal Trainer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="videosClass">
+                <div class="headTxt">
+                    <p>My Videos</p>
+                </div>
+                <div class="videosBlock">
+                    <div class="videoPost">
+                        <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/bTqVqk7FSmY" frameborder="0"></iframe>
+                        <p>Center - Day 29 - Pleasure</p>
+                    </div>
+                    <div class="videoPost">
+                        <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/bTqVqk7FSmY" frameborder="0"></iframe>
+                        <p>Center - Day 29 - Pleasure</p>
+                    </div>
+                    <div class="videoPost">
+                        <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/bTqVqk7FSmY" frameborder="0"></iframe>
+                        <p>Center - Day 29 - Pleasure</p>
+                    </div>
+                </div>
+                <div class="btnBlock">
+                    <a href="#" class="btn">Watch my videos</a>
+                </div>
+            </div>
+            <div class="joinNow">
+                <div class="headLetter">
+                    <h1>Join Now & <div class="underline"> Start Free 7 </div> days</h1>
+                    <div class="parBlock">
+                        <p>We are so glad you are here. There’s a plan for every type of a need - choose the one that fits your needs best. Both plans auto-renew so be sure to make any changes 7 days before the end of your subscription cycle.</p>
+                    </div>
+                </div>
+                <div class="joinCards">
+                    <div class="joinCard">
+                        <span>
+                            <p>MONTHLY</p>
+                        </span>
+                        <span>
+                            <p class="price">$12.99/mo <small>(USD)</small></p>
+                            <p>Charges you every month and you can cancel anytime you want.</p>
+                        </span>
+                        <span>
+                            <div class="good">
+                                <p><i class="bi bi-check-circle-fill"></i> New videos every week</p>
+                                <p><i class="bi bi-check-circle-fill"></i> Premium Courses</p>
+                                <p><i class="bi bi-check-circle-fill"></i> Online YouTube Courses</p>
+                                <p><i class="bi bi-check-circle-fill"></i> Exclusive Classes and Guest Instructors</p>
+                            </div>
+                        </span>
+                        <span>
+                            <div class="btnBlock">
+                                <a href="#" class="btn">Free 7 Days Trial</a>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="joinCard">
+                        <span>
+                            <p>MONTHLY</p>
+                        </span>
+                        <span>
+                            <p class="price">$12.99/mo <small>(USD)</small></p>
+                            <p>Charges you every month and you can cancel anytime you want.</p>
+                        </span>
+                        <span>
+                            <div class="good">
+                                <p><i class="bi bi-check-circle-fill"></i> New videos every week</p>
+                                <p><i class="bi bi-check-circle-fill"></i> Premium Courses</p>
+                                <p><i class="bi bi-check-circle-fill"></i> Online YouTube Courses</p>
+                                <p><i class="bi bi-check-circle-fill"></i> Exclusive Classes and Guest Instructors</p>
+                            </div>
+                        </span>
+                        <span>
+                            <div class="btnBlock">
+                                <a href="#" class="btn">Free 7 Days Trial</a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="blogheadtxt">
+                <h1>Latest on the blog</h1>
+                <p>Sign up for upcoming weekly classes and events.</p>
+            </div>
+            <div class="blogClass">
+                <div class="blogPost">
+                    <div class="img">
+                        <a href="#"><img src="../static/media/blog-1.jpg"></a>
+                    </div>
+                    <div class="info">
+                        <p>Business Coaching</p>
+                        <a href="#">Strategic Thinking to Mindset Everything</a>
+                        <p class="time">September 13, 2025</p>
+                    </div>
+                </div>
+                <div class="blogPost">
+                    <div class="img">
+                        <a href="#"><img src="../static/media/blog-2.jpg"></a>
+                    </div>
+                    <div class="info">
+                        <p>Relationship</p>
+                        <a href="#">Planning and Delivery Skills for Your Better Life</a>
+                        <p class="time">September 13, 2025</p>
+                    </div>
+                </div>
+                <div class="blogPost">
+                    <div class="img">
+                        <a href="#"><img src="../static/media/blog-3.jpg"></a>
+                    </div>
+                    <div class="info">
+                        <p>Time Management</p>
+                        <a href="#">Creating a Motivational Environment</a>
+                        <p class="time">September 13, 2025</p>
+                    </div>
+                </div>
+            </div>
+            <div class="startVideos">
+                <div class="side">
+                    <h1>Start with free videos & book your online courses</h1>
+                    <p>Join coach.yoga for an in person yoga class in weekly, space is limited make sure to sign up ahead of time. Reach out with any questions.</p>
+                    <a href="" class="btn">Book classes and learn more</a>
+                </div>
+                <div class="side">
+                    <div class="img">
+                        <img src="../static/media/yoga-coach.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
