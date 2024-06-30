@@ -3,7 +3,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)w8077*v$ba1u(sq*9n+u$mg#atn2#)aw^1%l8e031s^q8fsnl'
 DEBUG = True
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [".vercel.app"]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
